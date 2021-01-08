@@ -1,0 +1,63 @@
+<div class="mat-display-2">
+  {{ Article.title }}
+</div>
+
+<div class="mat-display-1">
+  Writer company name or designation
+  <h3>Posted on {{ Article.created | date: "medium" }}</h3>
+
+  <mat-icon class="share">bookmarks</mat-icon>
+</div>
+
+<div id="divleft">
+  <img
+    src="{{ AuthorAvatar }}"
+    style="height: 7%; width: 7%; border-radius: 50%"
+  />
+</div>
+<button mat-flat-button routerLink="/profile/{{ Article.author }}">
+  {{ Article.author }}
+</button>
+
+<button mat-flat-button class="followbutton">Follow</button>
+<div class="follow">
+  <h1>3.1k Total Views</h1>
+</div>
+
+<div id="divright">
+  <img
+    class="image"
+    src="{{ articleimage }}{{ Article.images[0] }}"
+    style="width: 80%; height: 50%"
+  />
+</div>
+<div class="paragrapgh">
+  <p [innerHTML]="Article.body"></p>
+</div>
+<section>
+  <div>
+    <button mat-flat-button class="Techbtn">Technology</button>
+    <button mat-flat-button class="Techbtn">Technology</button>
+    <button mat-flat-button class="Techbtn">Technology</button>
+    <button mat-flat-button class="Techbtn">Technology</button>
+    <button mat-flat-button class="Techbtn">Technology</button>
+  </div>
+
+  <div *ngIf="Liked; else elseBlock">
+    <button class="post-icon" mat-button color="primary">
+      <mat-icon>thumb_up</mat-icon> Like
+    </button>
+  </div>
+  <ng-template #elseBlock>
+    <button class="post-icon" mat-button (click)="like()" >
+      <mat-icon>thumb_up</mat-icon> Like
+    </button></ng-template
+  >
+
+  <p class="appreciation">2.6k appreciation</p>
+  <button class="post-comment" mat-button ><mat-icon >textsms</mat-icon>Comments</button>
+  
+  <p class="appreciation">200 comments</p>
+  <mat-icon class="post-comment">reply</mat-icon>
+</section>
+<mat-divider class="divider"></mat-divider>

@@ -1,0 +1,163 @@
+<div id="divleft">
+  <img
+    src="{{ avatarlink }}"
+    style="height: 13%; width: 13%; border-radius: 50%"
+  />
+  <h1>
+    {{ profiledata.name }}
+    <button mat-icon-button routerLink="/editprofile">
+      <mat-icon class="edit">edit profile</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon class="edit">delete profile</mat-icon>
+    </button>
+  </h1>
+  <h3>ABC Company</h3>
+
+  <h2>Writer</h2>
+  <h2>If you are not writing .Then start from<a href="#"> here.</a></h2>
+  <h2>Want to be a GEEKYBITE Author? .Then Apply<a href="/Become-An-Author"> here.</a></h2>
+  <h2>Want to be a GEEKYBITE Editor? .Then Apply<a href="/Become-An-Editor"> here.</a></h2>
+  <button mat-button class="btnlocation">My Location</button>
+</div>
+
+<mat-tab-group mat-align-tabs="center">
+  <!--overviewstart-->
+  <mat-tab label="Overview">
+    <div class="example-large-box3">
+      <p><a>1</a><br />Total Views</p>
+      <p><a>2</a><br />Profile Views</p>
+      <p><a>0</a><br />Total Publications</p>
+      <p><a>0</a><br />Publication Views</p>
+      <p><a>0</a><br />Publication Downloads</p>
+    </div>
+  </mat-tab>
+  <!--overviewend-->
+  <!--networkstart sub-->
+  <mat-tab label="Network">
+    <div class="example-large-box1">
+      <mat-tab-group mat-align-tabs="left" class="editorial">
+        <mat-tab label="Followers  {{ profiledata.followerCount }}">
+          <div class="example-large-box1">
+            <p>No content to display.</p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Following {{ profiledata.followingCount }}">
+          <div class="example-large-box1">
+            
+
+            <p>No content to display.</p>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </mat-tab>
+  <!--network end sub-->
+  <!--publisubstart-->
+  <mat-tab label="Publications">
+    <div class="example-large-box">
+      <mat-tab-group mat-align-tabs="left" class="editorial">
+        <mat-tab label="Suggested">
+          <div class="example-large-box">
+            <p>
+              Filter By:
+              <mat-radio-group aria-label="Select an option" color="primary">
+                <mat-radio-button value="1">Author</mat-radio-button>
+                <mat-radio-button value="2">Editor</mat-radio-button>
+              </mat-radio-group>
+            </p>
+            <div class="suggestes">
+              <h2>
+                An in vitro study to evaluate antibacterial effect thymus
+                vulgaris essential oil against porphyromonas gingivalis in
+                Kurdistan– Iraq
+              </h2>
+              <h3>Writer name or designation</h3>
+              <h4>Published on 01 Jul 2020</h4>
+              <button mat-button>Reject</button>
+              <button mat-button class="btn">Confirm</button>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Confirmed">
+          <div class="example-large-box">
+            <p>No content to display.</p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Rejected">
+          <div class="example-large-box">
+            <p>
+              Filter By:
+              <mat-radio-group aria-label="Select an option" color="primary">
+                <mat-radio-button value="1">Author</mat-radio-button>
+                <mat-radio-button value="2">Editor</mat-radio-button>
+              </mat-radio-group>
+            </p>
+            <div class="suggestes">
+              <h2>
+                An in vitro study to evaluate antibacterial effect thymus
+                vulgaris essential oil against porphyromonas gingivalis in
+                Kurdistan– Iraq
+              </h2>
+              <h3>Writer name or designation</h3>
+              <h4>Published on 01 Jul 2020</h4>
+
+              <button mat-button class="btn1">Confirm</button>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Manage my suggestions">
+          <div class="example-large-box">
+            <h1>Automatic Suggestions</h1>
+            <p>
+              Once you have confirmed all your publications and your profile is
+              up-to-date, you can turn off the automatic publication suggestions
+              feature. This means you will not receive any notifications of
+              publications we have found that match your profile.
+            </p>
+            <mat-slide-toggle color="primary"
+              >Yes,Please suggest publications</mat-slide-toggle
+            >
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </mat-tab>
+  <!--publi sub end-->
+  <mat-tab label="Editorial Contributions">
+    <div class="example-large-box">
+      <mat-tab-group mat-align-tabs="left" class="editorial">
+        <mat-tab label="Edited Publications   0">
+          <div class="example-large-box">
+            <h1>Showcase Your Editorial Contributions</h1>
+            <p>
+              <strong> Geekybite</strong> recognizes the importance of peer
+              review and the valuable contribution made by editors.<br />
+            </p>
+            <button mat-button>About Editorial Recognition</button>
+          </div>
+        </mat-tab>
+        <mat-tab label="Reviewed Publications  0"
+          ><div class="example-large-box">
+            <h1>Showcase Your Editorial Contributions</h1>
+            <p>
+              <strong>Geekybite</strong> acknowledges reviewers for their
+              contribution to the peer review process by listing their names on
+              published articles they endorsed.
+            </p>
+            <button mat-button>About Editorial Recognition</button>
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Editorial Roles">
+          <div class="example-large-box">
+            <p>
+              If You do not have an active role on geekybite editorial board.
+              You can apply to join one of the boards <a>here</a>.
+            </p>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </mat-tab>
+</mat-tab-group>

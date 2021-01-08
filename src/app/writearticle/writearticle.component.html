@@ -1,0 +1,140 @@
+<div class="pannel">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> My submission details </mat-panel-title>
+    </mat-expansion-panel-header>
+    <h1>Article categories*</h1>
+    <div class="forms">
+      <mat-form-field appearance="outline" class="field">
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="submitarticle.topic" />
+      </mat-form-field>
+      <h1>Article sub-cattegories *</h1>
+      <mat-form-field appearance="outline" class="field">
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="submitarticle.subtopic" />
+      </mat-form-field>
+      <h1>Get a dedicated Geekybite.com/link to you article*</h1>
+      <mat-form-field appearance="outline" class="field">
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="submitarticle.slug" />
+      </mat-form-field>
+
+      <p>* All entries marked with an asterisk are mandatory.</p>
+    </div>
+    <div class="content">
+      <h1>Add Images to Article*</h1>
+      <div class="form-group">
+        <label for="file">File</label>
+
+        <input
+          style="display: none"
+          id="file"
+          type="file"
+          multiple=""
+          (change)="onFileChange($event)"
+        />
+
+        <div
+          *ngIf="f.file.touched && f.file.invalid"
+          class="alert alert-danger"
+        >
+          <div *ngIf="f.file.errors.required">File is required.</div>
+        </div>
+      </div>
+
+      <img
+        *ngFor="let url of imagesT"
+        [src]="url"
+        height="150"
+        width="200px"
+        style="margin: 3px"
+      />
+      <br />
+      <button mat-button (click)="openFileBrowser($event)">Browse Files</button>
+    </div>
+
+    <mat-action-row>
+      <button mat-button class="save">Save</button>
+      <button mat-button class="continue">Save and continue</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Article Information </mat-panel-title>
+    </mat-expansion-panel-header>
+    <h1>Article title*</h1>
+    <div class="form1">
+      <mat-form-field appearance="outline" class="field-title">
+        <mat-label>Article Title</mat-label>
+        <input matInput [(ngModel)]="submitarticle.title" />
+      </mat-form-field>
+   
+
+      <h1>Article Deatils*</h1>
+    
+       <div  class="quillStyle" ><quill-editor [(ngModel)]="submitarticle.body"></quill-editor></div><br><br><br>
+
+        
+   
+      <h1>Keywords*</h1>
+      <mat-form-field appearance="outline" class="field">
+        <mat-label>Keywords</mat-label>
+        <input matInput [(ngModel)]="submitarticle.keys" />
+      </mat-form-field>
+
+      <p>
+        Keywords are an essential part of your manuscript submission; keywords
+        help ensure that your published article can be found in databases by
+        colleagues and peers in your research area. Choosing the most
+        appropriate and relevant keywords can help increase visibility and help
+        others discover your article.
+      </p>
+    </div>
+    <mat-action-row>
+      <button mat-button class="save">Save</button>
+      <button mat-button class="continue">Save and continue</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Editorial Information </mat-panel-title>
+    </mat-expansion-panel-header>
+    <h1>Preferred Editor*</h1>
+    <div class="form1">
+      <p>
+        Please select editors.Use the change button to view the full list of
+        available editors,and modify selection.
+      </p>
+      <mat-card-content>
+        <mat-card class="example-card">
+          <img
+            mat-card-image
+            class="image"
+            src="../../assets/images/writer.jpg"
+            style="width: 20%; height: 20%"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-header class="tittle">
+            <mat-card-title>Johnson</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="con">
+            <p>Self-employed</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>View Profile</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-card-content>
+
+      <button mat-button class="save">Change</button>
+    </div>
+    <mat-action-row>
+      <button mat-button class="save">Save</button>
+      <button mat-button class="continue">Save and continue</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+  <button mat-raised-button>Preview</button>
+  <button mat-raised-button (click)="articleSubmit()">Submit</button>
+</div>

@@ -1,0 +1,58 @@
+<div class="editor">
+    <h1>APPLY AS FRONTIERS EDITOR</h1>
+    <p>
+      Our Editorial Boards determine the suitability and quality of scientific and
+      academic content within each discipline.<br />
+      <br />
+      <br />
+      Please use the form below to apply to join one of our editorial boards.
+      Please indicate the geekybite articls you are applying to join under
+      "Field".<br />
+      <br />
+      <strong>IMPORTANT:</strong> Make sure you have filled in your Geekybite''s
+      profile with your employment history and other relevant information before
+      submitting your application.
+    </p>
+  </div>
+  <mat-divider></mat-divider>
+  
+  <div class="forms">
+    <p>No. of peer-reviewed publications **</p>
+    <mat-form-field appearance="outline" class="field">
+      <mat-label></mat-label>
+      <input matInput />
+    </mat-form-field>
+    <p>Editorial Role *</p>
+    <!--select-->
+    <mat-form-field appearance="outline" class="field">
+      <mat-label></mat-label>
+      <input matInput />
+    </mat-form-field>
+    <p>
+      Select a Domain and Field in which your Suggested Specialty Section Name
+      should appear
+    </p>
+    <p>Domain *</p>
+    <mat-form-field appearance="outline" class="field">
+      <mat-label></mat-label>
+      <input matInput  [(ngModel)]="editor.topic" />
+    </mat-form-field>
+    <p>Field *</p>
+    <mat-form-field appearance="outline" class="field">
+      <mat-label></mat-label>
+      <input matInput  [(ngModel)]="editor.sub" />
+    </mat-form-field>
+  
+    <p>Specialty * (i.e. your area of expertise within "Field")</p>
+    <mat-form-field appearance="outline" class="field">
+      <mat-label></mat-label>
+      <input matInput />
+    </mat-form-field>
+    <p>* All entries marked with an asterisk are mandatory.</p>
+  </div>
+  <!--formend-->
+  <mat-divider></mat-divider>
+  
+  <button mat-button>Cancel</button>
+  <button mat-button class="btn" (click)="submit()">Apply</button>
+  

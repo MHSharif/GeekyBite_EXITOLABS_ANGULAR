@@ -1,0 +1,155 @@
+<!--recent-->
+
+<p class="posts"><strong>Recent Posts</strong></p>
+
+<div *ngFor="let article of articles; let i = index">
+  <mat-card-content>
+    <mat-card class="example-card">
+      <img
+        mat-card-image
+        class="image"
+        src="{{ articleimage }}{{ article.images[0] }}"
+        style="width: 20%; height: 20%"
+        alt="Article Picture"
+      />
+      <mat-card-header class="tittle">
+        <mat-card-title>{{ article.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="con">
+        <p [innerHTML]="article.body"></p>
+      </mat-card-content>
+      <mat-card-actions>
+        <mat-icon class="icon">thumb_up</mat-icon>
+        <mat-icon class="icon">reply</mat-icon>
+        <br />
+
+        <button mat-flat-button (click)="readmore()" routerLink="/View-Article/{{article.slug}}">Read more</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-card-content>
+</div>
+
+<mat-card-content>
+  <mat-card class="example-card">
+    <img
+      mat-card-image
+      class="image"
+      src="../../assets/images/donut.jfif"
+      style="width: 20%; height: 20%"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-header class="tittle">
+      <mat-card-title
+        >Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content class="con">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        accusamus aperiam porro accusantium sit minima optio ducimus
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-icon class="icon">thumb_up</mat-icon>
+      <mat-icon class="icon">reply</mat-icon>
+      <br />
+
+      <button mat-flat-button>Read more</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-card-content>
+
+<mat-card-content>
+  <mat-card class="example-card">
+    <img
+      mat-card-image
+      class="image"
+      src="../../assets/images/robot.jpg"
+      style="width: 20%; height: 30%"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-header class="tittle">
+      <mat-card-title
+        >Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content class="con">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        accusamus aperiam porro accusantium sit minima optio ducimus
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-icon class="icon">thumb_up</mat-icon>
+      <mat-icon class="icon">reply</mat-icon>
+      <br />
+
+      <button mat-flat-button class="rbutton">Read more</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-card-content>
+
+<p class="posts"><strong>Popular Posts</strong></p>
+<mat-card-content>
+  <mat-card class="example-card">
+    <img
+      mat-card-image
+      class="image"
+      src="../../assets/images/c1.jfif"
+      style="width: 25%; height: 25%"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-header class="tittle">
+      <mat-card-title
+        >Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content class="con">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        accusamus aperiam porro accusantium sit minima optio ducimus
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-icon class="icon">thumb_up</mat-icon>
+      <mat-icon class="icon">reply</mat-icon>
+      <br />
+
+      <button mat-flat-button class="rbutton">Read more</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-card-content>
+
+<mat-card-content>
+  <mat-card class="example-card">
+    <img
+      mat-card-image
+      class="image"
+      src="../../assets/images/donut.jfif"
+      style="width: 20%; height: 20%"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-header class="tittle">
+      <mat-card-title
+        >Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content class="con">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        accusamus aperiam porro accusantium sit minima optio ducimus
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-icon class="icon">thumb_up</mat-icon>
+      <mat-icon class="icon">reply</mat-icon>
+      <br />
+
+      <button mat-flat-button>Read more</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-card-content>

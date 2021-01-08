@@ -1,0 +1,87 @@
+.box {
+  height: 400px;
+  width: 1600px;
+  margin-top: 10%;
+  background-color: black;
+}
+.cintro {
+  text-align: center;
+}
+.mat-display-1 {
+  color: white;
+  margin-top: -10%;
+}
+.cintro p {
+  color: white;
+  margin-top: -2%;
+}
+.article-center {
+  text-align: justify;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+.article-center p {
+  margin-top: 2%;
+  font-size: 105%;
+  color: black;
+}
+.aboutonezero {
+  text-align: justify;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+.aboutonezero p {
+  font-size: 130%;
+}
+.aboutonezero h3 {
+  color: grey;
+}
+.onezeroeditor {
+  text-align: justify;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+.onezeroeditor h1 {
+  color: grey;
+}
+.onezeroeditor h2 {
+  color: orangered;
+  margin-left: 13%;
+  margin-top: -8%;
+}
+.onezeroeditor h3 {
+  color: grey;
+  margin-left: 13%;
+  margin-top: -1%;
+}
+.mat-raised-button {
+  margin-left: 13%;
+}
+@media only screen and (max-width: 980px) {
+  .box {
+    height: 400px;
+    width: 850px;
+    margin-top: 20%;
+    background-color: black;
+  }
+  .cintro {
+    text-align: center;
+  }
+  .mat-display-1 {
+    color: white;
+    margin-top: -20%;
+  }
+  .cintro p {
+    color: white;
+    margin-top: -2%;
+  }
+  .article-center p {
+    margin-top: 2%;
+    font-size: 90%;
+    color: black;
+    margin-right: 5%;
+  }
+  .aboutonezero p {
+    font-size: 100%;
+  }
+}

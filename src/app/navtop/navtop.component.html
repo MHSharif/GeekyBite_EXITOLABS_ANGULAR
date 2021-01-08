@@ -1,0 +1,53 @@
+<!--navbarstart befoorelogin-->
+<div *ngIf="!authService.loggedIn()">
+<p>
+    <mat-toolbar class="toolbar">
+      <span><strong>Geekybite</strong></span>
+      <div class="navbar"></div>
+      <input matInput  type="text"  [(ngModel)]="searchlink" >
+      <a href="/search/articles?search={{searchlink}}"><mat-icon>search</mat-icon></a>
+      <a href="#">Write</a>
+      <a href="/signin">Sign in</a>
+      <a
+        mat-flat-button
+        class="nav-button"
+        routerLink="/signup"
+        routerLinkActive="active"
+        >Join</a
+      >
+    </mat-toolbar>
+  </p></div>
+  <!--navbar afteer login-->
+
+  <div *ngIf="authService.loggedIn()" >
+  <p>
+    <mat-toolbar class="toolbar_home">
+      <span><strong>Geekybite</strong></span>
+      <div class="navbar"></div>
+      <input matInput type="text">
+      <a href="#"><mat-icon>search</mat-icon></a>
+      <a href="#"><mat-icon>bookmark</mat-icon></a>
+      <a href="#"><mat-icon>add_alert</mat-icon></a>
+      <a routerLink="/writearticle">Write</a>
+      <a
+        mat-flat-button
+        class="nav-button"
+        (click)="authService.logoutUser()"
+        routerLinkActive="active"
+        >Log Out</a
+      >
+    </mat-toolbar>
+  </p>
+  
+  <p>
+    <mat-toolbar class="row">
+      <div class="navbar_home"></div>
+      <a href="#">Home</a>
+      <a href="#">Popular</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Artificial Intelligence</a></mat-toolbar
+    >
+  </p>
+</div>
+  <!--navbar afterlogin-->
+  

@@ -1,0 +1,58 @@
+
+<mat-form-field appearance="outline" class="field">
+    <mat-label>Title</mat-label>
+    <input matInput [(ngModel)]="title" /> </mat-form-field
+  ><br />
+
+<mat-form-field appearance="outline" class="field">
+  <mat-label>Topic</mat-label>
+  <input matInput [(ngModel)]="topic" /> </mat-form-field
+><br />
+<mat-form-field appearance="outline" class="field">
+  <mat-label>Sub Topic</mat-label>
+  <input matInput [(ngModel)]="subtopic" /> </mat-form-field
+><br />
+<mat-form-field appearance="outline" class="field">
+  <mat-label>Page Name</mat-label>
+  <input matInput [(ngModel)]="page" /> </mat-form-field
+><br />
+<mat-form-field appearance="outline" class="field">
+  <mat-label>Author Name</mat-label>
+  <input matInput [(ngModel)]="author" /> </mat-form-field
+><br />
+<button mat-raised-button class="csb" (click)="customsearch()">
+  Custom Search
+</button>
+
+<div *ngFor="let article of articles; let i = index">
+  <mat-card-content>
+    <mat-card class="example-card">
+      <img
+        mat-card-image
+        class="image"
+        src="{{ articleimage }}{{ article.images[0] }}"
+        style="width: 20%; height: 20%"
+        alt="Article Picture"
+      />
+      <mat-card-header class="tittle">
+        <mat-card-title>{{ article.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="con">
+        <p [innerHTML]="article.body"></p>
+      </mat-card-content>
+      <mat-card-actions>
+        <mat-icon class="icon">thumb_up</mat-icon>
+        <mat-icon class="icon">reply</mat-icon>
+        <br />
+
+        <button
+          mat-flat-button
+          (click)="readmore()"
+          routerLink="/View-Article/{{ article.slug }}"
+        >
+          Read more
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-card-content>
+</div>

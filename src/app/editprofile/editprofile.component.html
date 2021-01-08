@@ -1,0 +1,58 @@
+
+<div class="main">
+  <div class="image">
+    <img
+      src="{{avatarlink}}"
+      style="height: 22%; width: 22%; border-radius: 50%"
+    />
+  </div>
+
+  <input
+    fileInput
+    type="file"
+    style="display: none"
+    (change)="onFileChange($event)"
+    id="profilepicture"
+    name="profilepicture"
+  />
+  <a  href="" (click)="openFileBrowser($event)">Change Profile Picture</a>
+  <div class="forms">
+    <p>Name*</p>
+    <mat-form-field appearance="fill">
+      <mat-label></mat-label>
+      <input matInput [(ngModel)]="profiledata.name" />
+    </mat-form-field>
+    <!-- <p>Last name *</p>
+      <mat-form-field appearance="fill">
+        <mat-label></mat-label>
+        <input matInput />
+      </mat-form-field> -->
+    <p>Educational Institution/Organization</p>
+    <mat-form-field appearance="fill">
+      <mat-label></mat-label>
+      <input matInput />
+    </mat-form-field>
+    <p>My Areas</p>
+    <mat-form-field appearance="fill">
+      <mat-label></mat-label>
+      <input matInput />
+    </mat-form-field>
+    <p>Bio</p>
+    <mat-form-field appearance="fill">
+      <mat-label></mat-label>
+      <mat-select>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{ food.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>Brief bio<mat-icon>edit profile</mat-icon></p>
+    <mat-form-field appearance="fill">
+      <mat-label></mat-label>
+      <input matInput [(ngModel)]="profiledata.bio" />
+    </mat-form-field>
+  </div>
+
+  <button mat-button>Cancel</button>
+  <button mat-button (click)="updateInfo()" class="btn">Update</button>
+</div>

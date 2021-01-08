@@ -1,0 +1,146 @@
+.example-card {
+    max-width: 600px;
+    height: 75%;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color: white;
+  }
+  
+  .signin {
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .example-card h1 {
+    text-align: center;
+    margin-left: 30%;
+    color: grey;
+  }
+  
+  .signin mat-card-content p {
+    text-align: center;
+    margin-left: 0%;
+    color: grey;
+    font-size: 15px;
+  }
+  .signin mat-card-content p a {
+    color: orangered;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-decoration-line: none;
+  }
+  .signin mat-card-content .or {
+    color: grey;
+    margin-left: -10px;
+    font-size: 15px;
+    margin-top: 40px;
+    position: relative;
+  }
+  .or::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 2px;
+    background: rgba(128, 128, 128, 0.445);
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 9px;
+  }
+  .or::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 2px;
+    background: rgba(128, 128, 128, 0.445);
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -10px;
+  }
+  
+  .mat-form-field {
+    margin-left: 17%;
+    margin-top: -1%;
+    width: 70%;
+  }
+  mat-form-field.mat-form-field {
+    font-size: 16px;
+  }
+  .mat-form-field mat-label {
+    color: gray;
+    text-align: center;
+    margin-left: 0%;
+  }
+  
+  .mat-card .example-section {
+    margin-top: 12px;
+    margin-left: 20px;
+  }
+  .mat-card .example-margin {
+    margin-left: 76px;
+    color: gray;
+  }
+  .example-section a {
+    color: orangered;
+    margin-left: 36%;
+  }
+  .mat-button {
+    background-color: orangered;
+    color: white;
+    width: 50%;
+    margin-left: 27%;
+    margin-top: 10%;
+  }
+  .signin p {
+    color: gray;
+    margin-left: 35%;
+    font-size: 15px;
+    margin-top: 5%;
+  }
+  .signin p a {
+    color: orangered;
+    font-size: 15px;
+    text-decoration-line: none;
+  }
+  /*responsive*/
+  @media only screen and (max-width: 980px) {
+    .example-card {
+      max-width: 500px;
+      height: 82%;
+      margin-left: 20%;
+      margin-top: 10%;
+      background-color: white;
+    }
+    .signin mat-card-content .or {
+      color: grey;
+      margin-left: -38px;
+      font-size: 15px;
+      margin-top: 40px;
+      position: relative;
+    }
+    .or::before {
+      content: "";
+      display: block;
+      width: 145px;
+      height: 2px;
+      background: rgba(128, 128, 128, 0.445);
+      position: absolute;
+      margin-left: 315px;
+      margin-top: 9px;
+    }
+    .or::after {
+      content: "";
+      display: block;
+      width: 125px;
+      height: 2px;
+      background: rgba(128, 128, 128, 0.445);
+      position: absolute;
+      margin-left: 120px;
+      margin-top: -10px;
+    }
+  }
+  

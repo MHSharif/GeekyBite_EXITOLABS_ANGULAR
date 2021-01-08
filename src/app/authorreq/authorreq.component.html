@@ -1,0 +1,35 @@
+<div class="editor">
+    <h1>APPLY AS GEEKYBITE AUTHOR</h1>
+    <p>
+      Please use the form below to apply to join with our article writers. Please
+      indicate the geekybite articls you are applying to join under "Field".<br />
+      <br />
+      <strong>IMPORTANT:</strong> Make sure you have filled in your Geekybite's
+      profile with your employment history and other relevant information before
+      submitting your application. We will not be able to consider
+      <br />incomplete applications or CVs as attachment.
+    </p>
+  </div>
+  <mat-divider></mat-divider>
+  
+  <div class="forms">
+    <p>Select a Domain and Field in which you will write articles.</p>
+    <p>Domain *</p>
+    <mat-form-field appearance="fill" class="field">
+      <mat-label></mat-label>
+      <input matInput [(ngModel)]="author.topic"/>
+    </mat-form-field>
+    <p>Field *</p>
+    <mat-form-field appearance="fill" class="field">
+      <mat-label></mat-label>
+      <input matInput [(ngModel)]="author.sub"/>
+    </mat-form-field>
+  
+    <p>* All entries marked with an asterisk are mandatory.</p>
+  </div>
+  <!--formend-->
+  <mat-divider></mat-divider>
+  
+  <button mat-button>Cancel</button>
+  <button mat-button class="btn" (click)="submit()">Apply</button>
+  

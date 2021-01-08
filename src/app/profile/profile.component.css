@@ -1,0 +1,146 @@
+#divleft {
+    margin-left: 9%;
+    margin-top: 5%;
+  }
+  #divleft h1 {
+    margin-left: 17%;
+    margin-top: -14%;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.767);
+    font-weight: bold;
+  }
+  #divleft h3 {
+    margin-left: 17%;
+    margin-top: 2%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.767);
+    font-weight: bold;
+  }
+  #divleft .btnlocation {
+    color: white;
+    margin-left: 17%;
+    margin-top: 2%;
+    background-color: orangered;
+    width: 8%;
+    height: 5%;
+  }
+  .edit {
+    color: orangered;
+    margin-left: 3%;
+  }
+  #divleft h2 {
+    margin-left: 18%;
+    margin-top: 1%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.548);
+    font-weight: bold;
+  }
+  #divleft h2 a {
+    margin-top: 1%;
+    font-size: 20px;
+    color: orangered;
+    text-decoration: none;
+  }
+  
+  .mat-tab-group {
+    margin-bottom: 70px;
+    margin-top: 20%;
+    background-color: white;
+  }
+  .example-large-box {
+    height: 400px;
+    width: 1200px;
+  }
+  
+  .example-large-box3 {
+    height: 400px;
+    width: 1200px;
+  }
+  /*networksub tabstart*/
+  .example-large-box1 {
+    height: 170px;
+    width: 1470px;
+  }
+  .example-large-box1 p {
+    color: grey;
+    margin-top: 5%;
+    margin-left: 7%;
+  }
+  /*networksub tab end*/
+  
+  .editorial {
+    margin-top: 6px;
+  }
+  .example-large-box h1 {
+    color: black;
+    margin-top: 5%;
+    margin-left: 4%;
+  }
+  .example-large-box p {
+    color: grey;
+    margin-top: 2%;
+    margin-left: 4%;
+  }
+  .example-large-box3 p {
+    color: grey;
+    margin-top: 4%;
+    margin-left: 4%;
+    display: inline-block;
+    font-size: 22px;
+  }
+  .example-large-box3 p a {
+    color: orangered;
+    font-size: 40px;
+    margin-left: 12%;
+    line-height: normal;
+  }
+  .example-large-box p a {
+    color: orangered;
+  }
+  .example-large-box .mat-button {
+    background-color: orangered;
+    color: white;
+    width: 18%;
+    height: 12%;
+    border-radius: 5%;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  .mat-slide-toggle {
+    margin-left: 4%;
+    color: orangered;
+  }
+  
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 36px;
+  }
+  .example-large-box .suggestes {
+    margin-left: 4%;
+  }
+  .mat-button {
+    background-color: gray;
+    color: black;
+    margin-left: 0%;
+    width: 8%;
+    height: 5%;
+  }
+  .btn {
+    color: white;
+    margin-left: 15%;
+    background-color: orangered;
+    width: 8%;
+    height: 5%;
+  }
+  .btn1 {
+    color: white;
+    margin-left: 0%;
+    background-color: orangered;
+    width: 8%;
+    height: 5%;
+  }
+  @media only screen and (max-width: 980px) {
+    #divleft .btnlocation {
+      width: 16%;
+    }
+  }
+  

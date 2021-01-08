@@ -1,0 +1,55 @@
+.main {
+    background-color: #f1f1f1;
+    margin-top: 2%;
+    height: 140%;
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 50%;
+  }
+  .main .image {
+    margin-top: 20%;
+    margin-left: 40%;
+  }
+  .main a {
+    color: orangered;
+    margin-left: 40%;
+    margin-top: 70%;
+  }
+
+
+  
+  .forms p {
+    color: orangered;
+    margin-left: 9%;
+    margin-top: 4%;
+  }
+  .mat-form-field {
+    width: 80%;
+    height: -5%;
+    margin-left: 8%;
+  }
+  
+  .main .mat-button {
+    background-color: grey;
+    margin-left: 7%;
+  }
+  .main .btn {
+    background-color: orangered;
+    margin-left: 60%;
+  }
+  /* responsive*/
+  @media only screen and (max-width: 980px) {
+    .main {
+      background-color: #f1f1f1;
+      margin-top: 2%;
+      height: 140%;
+      width: 55%;
+      margin-left: 30%;
+      margin-right: 50%;
+    }
+    .main .btn {
+      background-color: orangered;
+      margin-left: 5%;
+    }
+  }
+  

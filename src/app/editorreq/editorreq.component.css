@@ -1,0 +1,50 @@
+.editor {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .editor h1 {
+    color: orangered;
+  }
+  .editor p {
+    margin-left: 10%;
+    text-align: justify;
+    color: gray;
+  }
+  .mat-divider {
+    height: 5%;
+  }
+  .forms {
+    margin-left: 10%;
+  }
+  .forms p {
+    color: gray;
+    margin-left: 10%;
+  }
+  .forms .field {
+    margin-left: 10%;
+    width: 40%;
+    height: 4%;
+  }
+  
+  .mat-button {
+    background-color: gray;
+    color: black;
+    margin-left: 18%;
+    width: 8%;
+    height: 5%;
+  }
+  .btn {
+    color: black;
+    margin-left: 23%;
+    background-color: orangered;
+    width: 8%;
+    height: 5%;
+  }
+  @media only screen and (max-width: 980px) {
+    .editor p {
+      margin-left: 10%;
+      text-align: justify;
+      color: gray;
+    }
+  }
+  

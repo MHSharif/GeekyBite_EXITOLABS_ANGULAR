@@ -1,0 +1,81 @@
+.posts {
+    color: black;
+    margin-left: 10%;
+    font-size: 15px;
+    margin-top: 40px;
+    position: relative;
+  }
+  .posts::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -15px;
+  }
+  
+  .example-card {
+    max-width: 1000px;
+    max-height: 3000px;
+    background-color: #f1f1f1;
+    margin-left: 10%;
+  }
+  .example-card::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .example-card .image {
+    margin: 40px;
+    float: left;
+  }
+  .example-card .tittle {
+    margin-top: 5%;
+    margin-left: -1%;
+  }
+  .con {
+    margin-left: 32%;
+    margin-top: 2%;
+    text-align: justify;
+  }
+  
+  .mat-flat-button {
+    margin-left: 19px;
+    margin-top: 20px;
+  }
+  .field {
+    margin-left: 10%;
+    width: 40%;
+    height: 4%;
+  }
+  .icon {
+    margin-left: 5%;
+  }
+  .csb{
+    margin-left: 10%;
+    width:40%;
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 980px) {
+    .example-card {
+      max-width: 650px;
+      max-height: 3000px;
+      background-color: #f1f1f1;
+      margin-left: 4%;
+    }
+    .example-card::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  
+    .rbutton {
+      margin-left: 230px;
+      margin-top: 20px;
+    }
+   
+  }
+  

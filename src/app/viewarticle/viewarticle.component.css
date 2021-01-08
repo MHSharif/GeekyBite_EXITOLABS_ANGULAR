@@ -1,0 +1,190 @@
+.mat-display-2 {
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 31%;
+  }
+  .mat-display-1 {
+    font-size: 20px;
+    text-align: justify;
+    margin-top: -47px;
+    margin-left: 31%;
+    font-weight: bold;
+  }
+  .mat-display-1 h3 {
+    text-align: justify;
+    margin-left: 0%;
+    color: grey;
+  }
+  
+  .share {
+    margin-left: 65%;
+  
+    margin-top: -40%;
+  }
+  
+  #divleft {
+    margin-left: 3%;
+    margin-top: -7%;
+  }
+  
+  .mat-flat-button {
+    width: 8%;
+    height: 30px;
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: orangered;
+    color: white;
+  }
+  .followbutton {
+    width: 8%;
+    height: 30px;
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: grey;
+    color: black;
+  }
+  .follow h1 {
+    margin-left: 3%;
+    text-align: justify;
+    display: inline;
+  }
+  #divright {
+    float: right;
+  }
+  .image {
+    margin-top: -13%;
+    margin-left: -8%;
+  }
+  .paragrapgh {
+    clear: both;
+    margin-left: 32%;
+    text-align: justify;
+  }
+  .Techbtn {
+    width: 7%;
+    height: 27px;
+  
+    margin-top: 2%;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: black;
+    text-align: center;
+    margin-left: 27%;
+    margin-right: -20%;
+    margin-bottom: 3%;
+  }
+  .post-icon {
+    margin-left: 27%;
+    width: 150px;
+  }
+  .appreciation {
+    margin-left: 35%;
+    margin-top: -1.5%;
+    color: gray;
+  }
+  .post-comment {
+    margin-left: 27%;
+    width: 150px;
+  }
+  .divider {
+    height: 5px;
+    margin-bottom: 5%;
+  }
+  /*responsive*/
+  
+  @media only screen and (min-width: 480px) and (max-width: 980px) {
+    .mat-display-2 {
+      font-size: 24px;
+      text-align: justify;
+      margin-top: 15px;
+      margin-left: 27%;
+    }
+    .mat-display-1 {
+      font-size: 20px;
+      text-align: justify;
+      margin-top: -47px;
+      margin-left: 27%;
+      font-weight: bold;
+    }
+    .mat-display-1 h3 {
+      text-align: justify;
+      margin-left: 0%;
+      color: grey;
+    }
+  
+    .share {
+      margin-left: 85%;
+      margin-top: -30%;
+    }
+  
+    #divleft {
+      margin-left: 2%;
+      margin-top: -7%;
+    }
+  
+    .mat-flat-button {
+      width: 10%;
+      height: 30px;
+      margin-left: 2%;
+      margin-top: 2%;
+      background-color: orangered;
+      color: white;
+    }
+    .followbutton {
+      width: 8%;
+      height: 30px;
+      margin-left: 2%;
+      margin-top: 2%;
+      background-color: grey;
+      color: black;
+    }
+    .follow h1 {
+      margin-left: 0%;
+      text-align: justify;
+      display: inline;
+    }
+    #divright {
+      float: right;
+    }
+    .image {
+      margin-top: -13%;
+      margin-left: 24%;
+      height: 20%;
+      width: -5%;
+      margin-right: 4%;
+    }
+    .paragrapgh {
+      clear: both;
+      margin-left: 23%;
+      text-align: justify;
+    }
+    .Techbtn {
+      width: 14%;
+      height: 27px;
+  
+      margin-top: 2%;
+      background-color: rgba(128, 128, 128, 0.3);
+      color: black;
+      text-align: center;
+      margin-left: 22%;
+      margin-right: -20%;
+      margin-bottom: 3%;
+    }
+    .post-icon {
+      margin-left: 23%;      
+    }
+    .appreciation {
+      margin-left: 30%;
+      margin-top: -3%;
+      color: gray;
+    }
+    .post-comment {
+      margin-left: 23%;
+    }
+    .divider {
+      width: 100%;
+      height: 5px;
+      margin-bottom: 5%;
+    }
+  }
+  

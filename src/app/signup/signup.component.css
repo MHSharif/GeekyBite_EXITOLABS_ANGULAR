@@ -1,0 +1,81 @@
+.example-card {
+  max-width: 600px;
+  height: 75%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.signup {
+  height: 100%;
+  width: 100%;
+  background-color: #f1f1f1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.example-card h1 {
+  text-align: center;
+  margin-left: 30%;
+  color: grey;
+}
+
+.signup mat-card-content p {
+  text-align: center;
+  margin-left: 0%;
+  color: gray;
+}
+.mat-form-field {
+  margin-left: 25%;
+  margin-top: -1%;
+  width: 50%;
+}
+mat-form-field.mat-form-field {
+  font-size: 16px;
+}
+.mat-form-field mat-label {
+  color: gray;
+  text-align: center;
+  margin-left: 17%;
+}
+.signup p {
+  color: gray;
+  margin-left: 25%;
+}
+
+@media only screen and (max-width: 980px) {
+  .example-card {
+    max-width: 500px;
+    height: 75%;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+
+  .signup {
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .example-card h1 {
+    text-align: center;
+    margin-left: 25%;
+    color: grey;
+  }
+
+  .signup mat-card-content p {
+    text-align: center;
+    margin-left: 0%;
+    color: gray;
+  }
+  .mat-form-field {
+    margin-left: 25%;
+    margin-top: -1%;
+    width: 50%;
+  }
+}
